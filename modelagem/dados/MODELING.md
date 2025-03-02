@@ -99,5 +99,5 @@ Modelagem inicial para um sistema de educação musical e teológica usando **Mo
 - Gera um certificado quando o aluno conclui um curso.
 
 Administração
-O `Admin do Sistema` pode gerenciar usuários e cursos.
-O `Professor` pode criar e gerenciar seus cursos.
+- O `Admin do Sistema` pode gerenciar usuários e cursos.
+- O `Professor` pode criar e gerenciar seus cursos.
