@@ -1,0 +1,13 @@
+{
+  "_id": "ObjectId()",
+  "courseId": "ObjectId(id_do_curso)",
+  "moduleId": "ObjectId(id_do_modulo)",
+  "questions": [
+    {
+      "question": "O que é teologia?",
+      "options": ["Estudo de Deus", "Filosofia", "História", "Matemática"],
+      "answer": "Estudo de Deus"
+    }
+  ],
+  "createdAt": "ISODate(2025-03-02T10:00:00Z)"
+}

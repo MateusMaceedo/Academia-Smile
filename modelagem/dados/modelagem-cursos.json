@@ -1,0 +1,19 @@
+{
+  "_id": "ObjectId()",
+  "title": "Introdução à Teologia",
+  "description": "Curso básico sobre teologia cristã",
+  "category": "Teologia",
+  "level": "Básico",
+  "instructorId": "ObjectId(id_do_professor)",
+  "modules": [
+    {
+      "title": "Origem da Teologia",
+      "description": "História e fundamentos da teologia",
+      "contents": [
+        { "type": "video", "url": "https://video.com/introducao.mp4" },
+        { "type": "pdf", "url": "https://pdf.com/material.pdf" }
+      ]
+    }
+  ],
+  "createdAt": "ISODate(2025-03-02T10:00:00Z)"
+}

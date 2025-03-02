@@ -1,0 +1,12 @@
+{
+  "_id": "ObjectId()",
+  "name": "João da Silva",
+  "email": "joao@email.com",
+  "passwordHash": "hash_senha",
+  "role": "student",
+  "profile": {
+    "bio": "Apaixonado por música sacra",
+    "instrument": "Violão"
+  },
+  "createdAt": "ISODate(2025-03-02T10:00:00Z)"
+}

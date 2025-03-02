@@ -1,0 +1,8 @@
+{
+  "_id": "ObjectId()",
+  "userId": "ObjectId(id_do_aluno)",
+  "courseId": "ObjectId(id_do_curso)",
+  "progress": 30,
+  "completedModules": "[ObjectId(id_do_modulo_1)]",
+  "createdAt": "ISODate(2025-03-02T10:00:00Z)"
+}

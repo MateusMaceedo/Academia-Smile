@@ -57,4 +57,4 @@ O professor terá acesso a plataforma, a nivel de edição de conteudo, para adi
 
 - Angular 17+
 - Golang
-- PostgreSQL
+- MongoDB
