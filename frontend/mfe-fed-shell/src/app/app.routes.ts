@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
   {
-    path: 'dashboard-admin',
+    path: 'mfe-fed-admin',
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
@@ -13,7 +13,7 @@ export const routes: Routes = [
       }).then((m) => m.AppComponent), // Nome do componente standalone
   },
   {
-    path: 'dashboard-user',
+    path: 'mfe-fed-user',
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
