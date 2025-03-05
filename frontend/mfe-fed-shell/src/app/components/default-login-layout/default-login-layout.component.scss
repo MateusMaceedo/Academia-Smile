@@ -18,7 +18,7 @@ main {
   .main-section {
     gap: 8px;
     flex-grow: 1;
-    background-color: #7001FD;
+    background-color: $gray-bg;
   }
 
   .form-section {
@@ -50,7 +50,7 @@ main {
         gap: 20px;
         width: 100%;
         font-size: 14px;
-        color: #EEEEEE;
+        color: $gray-bg;
         font-weight: 400;
         text-transform: uppercase;
 
@@ -58,7 +58,7 @@ main {
         div {
           flex-grow: 1;
           height: 2px;
-          background-color: #EEEEEE;
+          background-color: $gray-bg;
         }
       }
 
@@ -73,14 +73,14 @@ main {
         cursor: pointer;
 
         &.btn-primary {
-          background-color: #7001FD;
+          background-color: $primary-color;
           color: white;
           box-shadow:0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
         }
 
         &.btn-secundary {
-          border: 1px solid #7001FD;
-          color: #7001FD;
+          border: 1px solid $primary-color;
+          color: $primary-color;
         }
       }
     }
