@@ -6,7 +6,7 @@ import { Chart } from 'chart.js/auto';
   standalone: true,
   imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   ngOnInit() {
