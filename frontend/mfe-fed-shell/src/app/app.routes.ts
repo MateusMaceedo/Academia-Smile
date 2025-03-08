@@ -1,11 +1,9 @@
 import { Routes } from '@angular/router';
-import { loadRemoteModule } from '@angular-architects/module-federation';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignUpComponent } from './pages/signup/signup.component';
 import { UserComponent } from './pages/user/user.component';
 import { AuthGuard } from './services/auth-guard.service';
-import { RegisterClassesComponent } from './pages/register-classes/register-classes.component';
 
 export const routes: Routes = [
   /*{
@@ -29,6 +27,10 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },*/
   {
+    path: "home",
+    component: HomeComponent
+  },
+  {
     path: "login",
     component: LoginComponent
   },
@@ -40,9 +42,5 @@ export const routes: Routes = [
     path: "user",
     component: UserComponent,
     canActivate: [AuthGuard]
-  },
-  {
-    path: "teacher",
-    component: RegisterClassesComponent
   }
 ];

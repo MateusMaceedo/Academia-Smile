@@ -1,0 +1,99 @@
+@import "../../../styles/variables.scss";
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button-style($bg-color, $text-color, $border: none) {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: $border;
+  background: $bg-color;
+  color: $text-color;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.8;
+  }
+}
+
+.main {
+  @include flex-center(row);
+  height: 100vh;
+}
+
+.section {
+  @include flex-center(column);
+  height: 100%;
+}
+
+.main-section {
+  @extend .section;
+  gap: 8px;
+  flex-grow: 1;
+  background-color: $gray-bg;
+}
+
+.form-section {
+  @extend .section;
+  flex-grow: 0.3;
+  padding: 0 35px;
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 45px;
+  }
+}
+
+.btn-wrapper {
+  @include flex-center(column);
+  width: 100%;
+  gap: 30px;
+}
+
+.divider {
+  @include flex-center(row);
+  gap: 20px;
+  width: 100%;
+  font-size: 14px;
+  color: $gray-bg;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  div {
+    flex-grow: 1;
+    height: 2px;
+    background-color: $gray-bg;
+  }
+}
+
+button {
+  @include button-style(transparent, inherit);
+
+  &.btn-primary {
+    @include button-style($primary-color, white);
+    box-shadow: 0px 8px 12px rgba(148, 64, 255, 0.2);
+  }
+
+  &.btn-secondary {
+    @include button-style(transparent, $primary-color, 1px solid $primary-color);
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow:
+        0px 4px 10px rgba($primary-color, 0.5),  // Sombra externa
+        inset 0px 4px 10px rgba($primary-color, 0.2);  // Sombra interna
+    }
+  }
+}
