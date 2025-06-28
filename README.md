@@ -17,3 +17,5 @@ Css foi utilizado um pouco do framework bootstrap e o framework de JavaScript <s
 >Em breve irei atualizar para utilizar o Angular e suas possibilidades atuais.
 
 ## Preview
+
+Em migração para o Angular
