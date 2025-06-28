@@ -28,7 +28,7 @@ setInterval(() => {
 
 },3000);
 
-// o código acima cria uma animação entre os icones de música 
+// o código acima cria uma animação entre os icones de música
 
 
 // codigo acima configura o Iframe
@@ -182,12 +182,7 @@ function togglemenu() {
     console.log(mn);
     if(mn.style.display == 'none' || mn.style.display == ''){
         mn.style.display = 'block';
-    }else {
+    } else {
         mn.style.display = 'none';
     }
 }
-
-
-
-
-
