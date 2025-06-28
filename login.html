@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MusicSchool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet"> </head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <a href="index.html"><img src="svg/MusicSchoollogo.svg" alt="musicSchool"></a>
+        </div>
+        <div class="flex-menu">
+        <nav class="menu">
+            <ul>
+               <li><a href="index.html">inicio</a></li>
+               <li><a href="comofunciona.html">Como Funciona</a></li>
+               <li><a href="professores.html">Professores</a></li>
+               <li><a href="contato.html">Fale Conosco</a></li>
+            </ul> <!-- menu de navegação principal -->
+        </nav>
+        <div class="submenu">
+            <a href="login.html">Login</a>
+            <a href="planos.html" class="btn-assinar">Assinar</a>
+        </div>
+    </div>
+    <!--mobile menu-->
+    <div class="menu-mobile">
+        <button class="menu-target" onclick="togglemenu()"><img src="img/cardapio.png"></button>
+        <div class="submenu-mobile">
+            <a href="login.html">Login</a>
+            <a href="planos.html" class="btnn-assinar">Assinar</a>
+        </div>
+        <nav class="mobile-nav" id="menu-mob">
+            <ul>
+               <li><a href="index.html">inicio</a></li>
+               <li><a href="comofunciona.html">Como Funciona</a></li>
+               <li><a href="professores.html">Professores</a></li>
+               <li><a href="contato.html">Fale Conosco</a></li>
+            </ul> <!-- menu de navegação principal -->
+        </nav>
+    </div>
+    </header>  <!-- fim do header -->
+    <div class="container">
+        <h1>Minha conta</h1>
+        <div class="login-form">
+            <form action="" method="post">
+                <h2>Entrar</h2>
+                <label for="user-mail">Email</label>
+                <input type="email" name="user-mail" id="user-mail">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required placeholder="*****">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+</body>
+</html>
