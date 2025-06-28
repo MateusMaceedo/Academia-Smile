@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicSchool</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <a href="index.html"><img src="svg/MusicSchoollogo.svg" alt="musicSchool"></a>
+        </div>
+        <div class="flex-menu">
+        <nav class="menu">
+            <ul>
+               <li><a href="index.html">inicio</a></li>
+               <li><a href="comofunciona.html">Como Funciona</a></li>
+               <li><a href="professores.html">Professores</a></li>
+               <li><a href="contato.html">Fale Conosco</a></li>
+            </ul> <!-- menu de navegação principal -->
+        </nav>
+        <div class="submenu">
+            <a href="login.html">Login</a>
+            <a href="planos.html" class="btn-assinar">Assinar</a>
+        </div>
+    </div>
+    <!--mobile menu-->
+    <div class="menu-mobile" >
+        <button class="menu-target" onclick="togglemenu()"><img src="img/cardapio.png"></button>
+        <div class="submenu-mobile">
+            <a href="login.html">Login</a>
+            <a href="planos.html" class="btnn-assinar">Assinar</a>
+        </div>
+        <nav class="mobile-nav" id="menu-mob">
+            <ul>
+               <li><a href="index.html">inicio</a></li>
+               <li><a href="comofunciona.html">Como Funciona</a></li>
+               <li><a href="professores.html">Professores</a></li>
+               <li><a href="contato.html">Fale Conosco</a></li>
+            </ul> <!-- menu de navegação principal -->
+        </nav>
+    </div>
+    </header>  <!-- fim do header -->
+
+    <section class="apresentacao">
+        <div class="apresentacao-img">
+            <img class="animate__animated animate__fadeInTopLeft " src="img/img-guitarHome.png" alt="guitarrista">
+        </div>
+        <div class="apresentacao-text">
+            <h1>aqui na <span class="musicSchool">MusicSchool</span> você aprende música
+                sem sair de casa
+            </h1>
+            <p class="hide">
+                por um preço ótimo você paga uma assinatura e faz todas as aulas que quiser.
+                deseja estudar Bateria, Violão? assine com a MusicSchool.
+            </p>
+            <p class="hide">
+                a musica é a arte mais direta. ela entra no ouvido, vai para o coração e manifesta-se na alma.
+                e na musicSchool é muito facil aprender música:você estuda o que quiser, quando quiser, de onde estiver e por um ótimo preço.
+            </p>
+        </div>
+    </section>
+    <section class="instruments">
+        <div class="instruments-item1 stri"></div>
+        <div class="instruments-item2 stri"></div>
+        <div class="instruments-item3 stri"></div>
+        <div class="instruments-item4 stri"></div>
+        <div class="instruments-item5 stri"></div>
+        <div class="instruments-item6 stri"></div>
+    </section>
+    <div class="instruments-line"></div>
+
+    <section>
+        <h2 class="instrument-active">Saxofone</h2>
+        <div class="line"></div>
+        <div class="video-instrument">
+            <div class="video-play">
+                <iframe  src='' frameborder=”0” allowfullscreen>
+                </iframe>
+            </div>
+            <div class="desc-video-play">
+                <p>aprenda a tocar <span class="instrumento-rel">Saxofone</span> sem sair de casa</p>
+                <ul>
+                    <li>são mais de 250 aulas</li>
+                    <li>qualidade de audio  video exelente(1080p)</li>
+                    <li>grupo de ajuda com Professores</li>
+                    <li>preço baixo</li>
+                    <li>escolha fazer até 3 cursos Simultaneos</li>
+                    <li>cancele quando quiser</li>
+
+                    <a class="btn-aulas" href="login.html">Aulas</a>
+                </ul>
+                <img src="svg/icons8-música.svg" alt="icon" class="icon-music1">
+                <img src="svg/icons8-música.svg" alt="icon" class="icon-music3">
+            </div>
+        </div>
+    </section>
+
+    <div class="card-container">
+        <a href="planos.html">
+        <div class="card">
+            <div class="grid1">
+                <p>Tenha acesso as aulas por apenas</p>
+            </div>
+            <div class="grid2">
+                <object data="svg/contract.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="grid3">
+                <p><span class="s-moeda">R$</span>
+                    <span class="s-preco">5,99</span>
+                    <span>/</span>
+                    <span class="plano">semana</span>
+                </p>
+            </div>
+            <div class="grid4">
+                <button class="btn-as-card grid4">Assinar</button>
+            </div>
+        </div>
+    </a>
+    </div>
+    <!-- fim do card -->
+
+    <div class="servicos">
+        <h2>Benefícios</h2>
+        <div class="servicos-container">
+            <div class="bnf1">
+                <img src="svg/devices.svg" alt="dispositivos">
+                <h3>Em Qualquer Lugar</h3>
+                <p>
+                    faça aulas em onde estiver, é só se conectar e estudar.
+                </p>
+            </div>
+            <div class="bnf2">
+                <img src="svg/music-teacher.svg" alt="professores">
+                <h3>Professores Competentes</h3>
+                <p>
+                    na MusicSchool, temos professores com mais de 15 anos de experiência para te ensinar.
+                </p>
+            </div>
+            <div class="bnf3">
+                <img src="svg/suporte.svg" alt="suporte">
+                <h3>Suporte</h3>
+                <p>
+                    você conta com grupos em redes sociais para troca de experiências, Dúvidas
+                    e interagir com outros alunos e professores.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="quemsomos.html">quem somos</a></li>
+                <li><a href="politica-de-privacidade.html">Política de privacidade</a></li>
+                <li><a href="comofunciona.html">Termos e condições</a></li>
+            </ul>
+            <ul>
+                <li><a href="contato.html">Fale conosco</a></li>
+                <li><a href="login.html">Minha conta</a></li>
+                <li><a href="planos.html">Planos</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociais">
+            <a href="#"><img src="svg/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="svg/instagram(1).svg" alt="instagram"></a>
+            <a href="#"> <img src="svg/whatsapp.svg" alt="whatsapp"></a>
+            <a href="#"><img src="svg/youtube.svg" alt="youtube"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
